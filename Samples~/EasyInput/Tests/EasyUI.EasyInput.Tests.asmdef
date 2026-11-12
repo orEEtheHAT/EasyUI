@@ -1,0 +1,30 @@
+{
+  "name": "EasyUI.EasyInput.Tests",
+  "references": [
+    "EasyUI.Runtime",
+    "EasyUI.EasyInput",
+    "EasyInput.Runtime",
+    "Unity.InputSystem",
+    "Unity.ugui"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false,
+  "versionDefines": [
+    {
+      "name": "com.oreethehat.easy-input",
+      "expression": "0.2.0",
+      "define": "EASY_WAVE1_INPUT"
+    },
+    {
+      "name": "com.oreethehat.easy-ui",
+      "expression": "0.2.0",
+      "define": "EASY_WAVE1_UI"
+    }
+  ],
+  "defineConstraints": [
+    "EASY_WAVE1_INPUT",
+    "EASY_WAVE1_UI"
+  ]
+}

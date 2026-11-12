@@ -1,0 +1,24 @@
+{
+  "name": "EasyUI.EasyFeedbacks",
+  "references": [
+    "EasyUI.Runtime",
+    "EasyFeedbacks.Runtime",
+    "Unity.ugui"
+  ],
+  "versionDefines": [
+    {
+      "name": "com.oreethehat.easy-feedbacks",
+      "expression": "1.8.0",
+      "define": "EASY_WAVE1_FEEDBACKS"
+    },
+    {
+      "name": "com.oreethehat.easy-ui",
+      "expression": "0.2.0",
+      "define": "EASY_WAVE1_UI"
+    }
+  ],
+  "defineConstraints": [
+    "EASY_WAVE1_FEEDBACKS",
+    "EASY_WAVE1_UI"
+  ]
+}

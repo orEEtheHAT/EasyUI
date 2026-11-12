@@ -1,0 +1,18 @@
+{
+    "passed": true,
+    "batchMode": false,
+    "error": "",
+    "unity": "6000.3.22f1",
+    "checks": [
+        "Imported scene starts with passive HUD",
+        "I opens inventory and acquires gameplay request",
+        "Enter opens nested settings",
+        "Enter opens confirmation with third request",
+        "Escape cancels only dialog",
+        "Escape restores inventory's selected Settings button",
+        "Last close restores gameplay after neutral input",
+        "Holding R opens radial",
+        "Gamepad stick selects upper sector",
+        "Releasing R confirms radial item and returns to HUD"
+    ]
+}

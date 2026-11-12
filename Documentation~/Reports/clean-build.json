@@ -1,0 +1,11 @@
+{
+    "result": "Succeeded",
+    "packageSource": "LocalTarball",
+    "errors": 0,
+    "warnings": 0,
+    "missingScripts": 0,
+    "bytes": 148838602,
+    "seconds": 6.5005660999999999,
+    "prefabReferencesValid": true,
+    "warningMessages": []
+}

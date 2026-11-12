@@ -1,0 +1,5 @@
+{
+  "name": "EasyUI.Runtime",
+  "rootNamespace": "EasyUI",
+  "references": ["Unity.ugui", "Unity.InputSystem"]
+}

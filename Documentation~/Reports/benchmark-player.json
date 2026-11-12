@@ -1,0 +1,123 @@
+{
+    "unity": "6000.3.22f1",
+    "cpu": "Intel(R) Core(TM) i7-14700KF",
+    "development": true,
+    "batchMode": false,
+    "threadAllocationCounterSupported": false,
+    "allocationNote": "allocatedBytes = -1 when Mono's per-thread allocation counter is unsupported. frameGcBytes for synchronous phases is the whole execution frame from ProfilerRecorder, including harness/Input System overhead; idle phases are per-frame averages.",
+    "canvasMarker": "Canvas.BuildBatch",
+    "phases": [
+        {
+            "name": "500 reusable modal open/close",
+            "operations": 500,
+            "milliseconds": 115.5398,
+            "allocatedBytes": -1,
+            "managedMemory": 5951488,
+            "totalMemory": 60999116,
+            "navigationNanoseconds": 0.0,
+            "frameGcBytes": 4897968.0,
+            "canvasNanoseconds": 0.0
+        },
+        {
+            "name": "200 prefab instantiate/destroy",
+            "operations": 200,
+            "milliseconds": 124.53890000000001,
+            "allocatedBytes": -1,
+            "managedMemory": 26902528,
+            "totalMemory": 65152089,
+            "navigationNanoseconds": 0.0,
+            "frameGcBytes": 20071760.0,
+            "canvasNanoseconds": 0.0
+        },
+        {
+            "name": "Memory before hidden windows",
+            "operations": 0,
+            "milliseconds": 0.0,
+            "allocatedBytes": 0,
+            "managedMemory": 23588864,
+            "totalMemory": 60216811,
+            "navigationNanoseconds": 0.0,
+            "frameGcBytes": 0.0,
+            "canvasNanoseconds": 0.0
+        },
+        {
+            "name": "Baseline: manager disabled / 120 idle frames",
+            "operations": 120,
+            "milliseconds": 0.0,
+            "allocatedBytes": 0,
+            "managedMemory": 27951104,
+            "totalMemory": 66733445,
+            "navigationNanoseconds": 274.1666666666667,
+            "frameGcBytes": 1141.2166666666667,
+            "canvasNanoseconds": 0.0
+        },
+        {
+            "name": "1000 unopened inactive windows / 120 idle frames",
+            "operations": 120,
+            "milliseconds": 0.0,
+            "allocatedBytes": 0,
+            "managedMemory": 28180480,
+            "totalMemory": 66740725,
+            "navigationNanoseconds": 305.8333333333333,
+            "frameGcBytes": 1136.55,
+            "canvasNanoseconds": 0.0
+        },
+        {
+            "name": "1000 previously opened inactive windows / 120 idle frames",
+            "operations": 120,
+            "milliseconds": 0.0,
+            "allocatedBytes": 0,
+            "managedMemory": 13033472,
+            "totalMemory": 69974221,
+            "navigationNanoseconds": 345.8333333333333,
+            "frameGcBytes": 1136.55,
+            "canvasNanoseconds": 0.0
+        },
+        {
+            "name": "200 gamepad navigation steps",
+            "operations": 200,
+            "milliseconds": 7.6821,
+            "allocatedBytes": -1,
+            "managedMemory": 13402112,
+            "totalMemory": 70036979,
+            "navigationNanoseconds": 0.0,
+            "frameGcBytes": 470297.0,
+            "canvasNanoseconds": 0.0
+        },
+        {
+            "name": "200 keyboard/gamepad switches",
+            "operations": 200,
+            "milliseconds": 6.054600000000001,
+            "allocatedBytes": -1,
+            "managedMemory": 13504512,
+            "totalMemory": 70057987,
+            "navigationNanoseconds": 0.0,
+            "frameGcBytes": 149496.0,
+            "canvasNanoseconds": 0.0
+        },
+        {
+            "name": "Visible menu and 1000 inactive windows / 120 idle frames",
+            "operations": 120,
+            "milliseconds": 0.0,
+            "allocatedBytes": 0,
+            "managedMemory": 12877824,
+            "totalMemory": 69950484,
+            "navigationNanoseconds": 2733.3333333333335,
+            "frameGcBytes": 1182.0333333333333,
+            "canvasNanoseconds": 363.3333333333333
+        },
+        {
+            "name": "Memory after cleanup",
+            "operations": 0,
+            "milliseconds": 0.0,
+            "allocatedBytes": 0,
+            "managedMemory": 5554176,
+            "totalMemory": 61621123,
+            "navigationNanoseconds": 0.0,
+            "frameGcBytes": 0.0,
+            "canvasNanoseconds": 0.0
+        }
+    ],
+    "remainingWindows": 0,
+    "liveSceneWindows": 0
+}

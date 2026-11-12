@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "code": "return new { unity=UnityEngine.Application.unityVersion, playing=UnityEditor.EditorApplication.isPlaying, compiling=UnityEditor.EditorApplication.isCompiling, scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().path, packageSource=UnityEditor.PackageManager.PackageInfo.FindForAssetPath(\"Packages/com.oreethehat.easy-ui/package.json\").source.ToString(), runtimeAssembly=typeof(EasyUI.WindowManager).Assembly.GetName().Name };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "unity": "6000.3.22f1",
+        "playing": false,
+        "compiling": false,
+        "scene": "Assets/PackageTests/EasyInput/EasyMovement.unity",
+        "packageSource": "Embedded",
+        "runtimeAssembly": "EasyUI.Runtime"
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\LeshaPC\\Games Factory"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

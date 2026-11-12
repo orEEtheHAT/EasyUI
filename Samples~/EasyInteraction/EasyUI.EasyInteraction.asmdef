@@ -1,0 +1,24 @@
+{
+  "name": "EasyUI.EasyInteraction",
+  "references": [
+    "EasyUI.Runtime",
+    "EasyInteraction.Runtime",
+    "Unity.ugui"
+  ],
+  "versionDefines": [
+    {
+      "name": "com.oreethehat.easy-interaction",
+      "expression": "0.3.0",
+      "define": "EASY_WAVE1_INTERACTION"
+    },
+    {
+      "name": "com.oreethehat.easy-ui",
+      "expression": "0.2.0",
+      "define": "EASY_WAVE1_UI"
+    }
+  ],
+  "defineConstraints": [
+    "EASY_WAVE1_INTERACTION",
+    "EASY_WAVE1_UI"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "code": "var scenes=new System.Collections.Generic.List<object>(); for(int i=0;i<UnityEngine.SceneManagement.SceneManager.sceneCount;i++){var s=UnityEngine.SceneManagement.SceneManager.GetSceneAt(i);scenes.Add(new{path=s.path,dirty=s.isDirty,loaded=s.isLoaded});}return new {playing=UnityEditor.EditorApplication.isPlaying,compiling=UnityEditor.EditorApplication.isCompiling,scenes=scenes};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "playing": false,
+        "compiling": false,
+        "scenes": [
+          {
+            "path": "Assets/PackageTests/EasySuite/EasySuiteLab.unity",
+            "dirty": false,
+            "loaded": true
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\LeshaPC\\Games Factory"
+    }
+  },
+  "errors": [],
+  "warnings": [],
+  "notifications": [
+    {
+      "code": "CLI_UPDATE_AVAILABLE",
+      "message": "A new version of the Unity CLI is available: 1.0.0-beta.13 → 1.0.0-beta.17",
+      "data": {
+        "current": "1.0.0-beta.13",
+        "latest": "1.0.0-beta.17"
+      },
+      "remediation": {
+        "command": "unity self-update",
+        "requiresUserApproval": true
+      }
+    }
+  ]
+}

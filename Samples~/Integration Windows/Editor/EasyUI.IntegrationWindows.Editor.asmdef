@@ -1,0 +1,61 @@
+{
+  "name": "EasyUI.IntegrationWindows.Editor",
+  "references": [
+    "EasyUI.Runtime",
+    "EasyUI.IntegrationWindows",
+    "EasyUI.EasyInteraction",
+    "EasyUI.EasyBuilding",
+    "EasyUI.EasyInput",
+    "EasyUI.EasyFeedbacks",
+    "Unity.ugui"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "versionDefines": [
+    {
+      "name": "com.oreethehat.easy-building",
+      "expression": "0.3.0",
+      "define": "EASY_WAVE1_BUILDING"
+    },
+    {
+      "name": "com.oreethehat.easy-feedbacks",
+      "expression": "1.8.0",
+      "define": "EASY_WAVE1_FEEDBACKS"
+    },
+    {
+      "name": "com.oreethehat.easy-input",
+      "expression": "0.2.0",
+      "define": "EASY_WAVE1_INPUT"
+    },
+    {
+      "name": "com.oreethehat.easy-interaction",
+      "expression": "0.3.0",
+      "define": "EASY_WAVE1_INTERACTION"
+    },
+    {
+      "name": "com.oreethehat.easy-localization",
+      "expression": "0.2.0",
+      "define": "EASY_WAVE1_LOCALIZATION"
+    },
+    {
+      "name": "com.oreethehat.easy-resources",
+      "expression": "0.3.0",
+      "define": "EASY_WAVE1_RESOURCES"
+    },
+    {
+      "name": "com.oreethehat.easy-ui",
+      "expression": "0.2.0",
+      "define": "EASY_WAVE1_UI"
+    }
+  ],
+  "defineConstraints": [
+    "EASY_WAVE1_BUILDING",
+    "EASY_WAVE1_FEEDBACKS",
+    "EASY_WAVE1_INPUT",
+    "EASY_WAVE1_INTERACTION",
+    "EASY_WAVE1_LOCALIZATION",
+    "EASY_WAVE1_RESOURCES",
+    "EASY_WAVE1_UI"
+  ]
+}

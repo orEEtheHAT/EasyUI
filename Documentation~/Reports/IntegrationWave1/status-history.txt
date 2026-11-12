@@ -1,0 +1,64 @@
+EasyUI — IntegrationWave1
+Состояние: работа начата. Существующие изменения сохранены; версии, общий manifest, чужие пакеты и EasySuite не меняю.
+
+Первый шаг (независимый от соседей):
+- RadialMenu: обновление представления/доступности пункта без пересоздания всего меню и потери выбранного ID; Confirmed доставляется до возможного OnDisable при немедленном закрытии.
+- EasyUI.EasyInput (sample): IInputSettingsTextProvider (Changed + GetText(key,fallback)); InputSettingsWindow.ExtrasRoot и ViewBuilt для добавления языка без копии controls/rebinding logic. InputSettingsWindow остаётся единственным писателем своих Text.
+Эти изменения ещё в подготовке; точные готовые сигнатуры и компиляцию отмечу отдельным обновлением.
+
+План адаптеров (в Samples~, без новых зависимостей Core):
+- InteractionMenuWindow + InteractionRadialMenu: Bind(InteractionPresenter), Select/Activate/Release/Back через Presenter; актуальные label/binding/icon/toggle из B.
+- BuildingCatalogWindow + BuildingRadialMenu: Bind(BuildingPlacer, BuildingCatalog), Select через текущую Placer.Session; не создают и не Dispose чужие сессии.
+- Согласованное отображение стоимости/остатков с одним владельцем Text; combined adapters Resources+Localization вместо двух компонентов, пишущих одну строку.
+- Интегрированные controls+language через публичный EasyLocalization API, представления привязок только EasyInput.
+- WindowFeedbacks.ContextProvider (MonoBehaviour, IFeedbackContextProvider) после появления D.
+
+Зависимости/запросы:
+1. Interaction: ожидаю B (IInteractionInputSource, Presenter.InputSource, Prompt.BindingIcon). Желательно событие обновления списка/доступности или публичный Refresh для каталога нескольких действий; пока предусмотрю Refresh() на UI и проверку доступности через Presenter.Check.
+2. Building: ожидаю C. UI будет каждый Select брать Placer.Session. Для событийного обновления после SetSession/выбора извне желательны SessionChanged на Placer и Changed/SelectionChanged на Session; без них UI сможет работать через явный Refresh(), но это ограничит автоматическое отображение внешнего выбора.
+3. Feedbacks: ожидаю D, точное место интерфейса/готовность API.
+4. Localization: ожидаю публичный lifecycle API для изолированных тестов и смены LocalizationSettings; собственные fixtures переведу на него. Прошу отметить точные сигнатуры. Чужие tests/fixtures не меняю.
+5. Для сквозных approach/death/restore регрессий ожидаю готовность A и исправленного CombatInteractionGuard; UI не будет вмешиваться в motor/cursor/сохранение чужих пакетов.
+
+Staging: Library/EasyUIWork/IntegrationWave1. Итоговые отчёты: Packages/com.oreethehat.easy-ui/Documentation~/Reports/IntegrationWave1. Общая сцена/мастер остаются у координатора.
+
+19:55 — СОБСТВЕННЫЙ КОНТРАКТ ГОТОВ И СКОМПИЛИРОВАН:
+- EasyUI.RadialMenu.UpdateItem(string id, string label, bool available = true, Sprite icon = null) : bool; сохраняет view/callback/выбор. SetItems сохраняет выбранный ID при перестановке. Confirmed доставляется до auto-close и переживает закрытие из item callback.
+- EasyUI.Integrations.Input.IInputSettingsTextProvider { event Action Changed; string GetText(string key, string fallback); }
+- InputSettingsWindow.TextProvider : MonoBehaviour get/set; ExtrasRoot : RectTransform get; event Action<RectTransform> ViewBuilt. ViewBuilt вызывается при каждом построении, ExtrasRoot внизу controls; расширение получает слот и само создаёт свою кнопку/дочернее окно. Контролы не дублируются.
+- EasyUI.Integrations.Feedbacks.WindowFeedbacks.ContextProvider : MonoBehaviour; PrepareContext() : FeedbackContext. Подключён реальный IFeedbackContextProvider D.
+Compile: Packages/com.oreethehat.easy-ui/Documentation~/Reports/IntegrationWave1/compile.json, completed failed=false.
+
+Следующий шаг: InteractionMenuWindow.Bind(InteractionPresenter) и BuildingCatalogWindow.Bind(BuildingPlacer, BuildingCatalog). Оба компонента будут автоматически использовать RadialMenu на том же объекте; без него строят список. Выбор по умолчанию закрывает окно, передаёт выбранный action/session системе, но не дублирует gameplay input. Публичные Activate/Release у Interaction маршрутизируются через Presenter. Точные готовые сигнатуры и builder скоро.
+Для общего стенда готовлю отдельный optional sample Integration Windows с IntegrationWindowBuilder.CreateAt(folder): definitions/prefabs Interaction, InteractionRadial, Building, BuildingRadial, Settings. Он не создаёт общую сцену. Controls settings расширятся кнопками языка и аудио (дочернее окно FeedbackSettings). Самостоятельные samples сохраняются.
+
+ГОТОВЫЕ ОКНА И BUILDER — КОМПИЛЯЦИЯ ПРОШЛА (compile.json, completed/failed=false):
+1. namespace EasyUI.Integrations.Interaction, assembly EasyUI.EasyInteraction:
+   InteractionMenuWindow.Bind(InteractionPresenter); Select(InteractionAction):bool; ActivateSelected():bool; ReleaseSelected():void; SetValue(float):bool; Refresh(); HandleBack():bool. Prompt: InteractionPrompt. CloseOnSelection=true. С RadialMenu на том же объекте строит круг, без него список. Select выбирает action, не запускает его; Activate/Release нужны лишь явным UI-кнопкам, gameplay остаётся Presenter/input. Back отменяет текущую операцию перед закрытием. Подпись/glyph/toggle берутся из реального B.
+2. namespace EasyUI.Integrations.Building, assembly EasyUI.EasyBuilding:
+   BuildingCatalogWindow.Bind(BuildingPlacer,BuildingCatalog); Session:get; Select(BuildingDefinition):bool; Refresh(); HandleBack():bool; Presentation:MonoBehaviour get/set (IBuildingCatalogPresentation). С RadialMenu — круг, без — каталог. Каждый Select читает актуальную Placer.Session. Подписки SessionChanged/SelectionChanged/Disposed, без CreateSession/Dispose. Back сначала отменяет выбранную стройку. CloseOnSelection=true.
+3. optional sample Samples~/Integration Windows; импортирован в Assets/PackageTests/EasyUI/Integrations/Integration Windows:
+   EasyUI.Integrations.Editor.IntegrationWindowBuilder.CreateAt(string folder):IntegrationWindowSet
+   Меню Tools/EasyUI/Create Integration Windows. Только prefab/WindowDefinition, без scene/settings. Существующий набор возвращается без перезаписи.
+   Set поля Interaction/InteractionRadial/Building/BuildingRadial/Settings/Audio : WindowDefinition.
+   EasyUI.Integrations.IntegrationWindowSet.InstantiateWindow(WindowDefinition,Transform parent=null):UIWindow — неактивный экземпляр для однократного per-player wiring перед manager.Open(instance). Это рекомендуемый путь для scene references/context provider и повторного открытия.
+   Пример: var w=IntegrationWindowSet.InstantiateWindow(set.Building,uiRoot); w.GetComponent<BuildingCatalogWindow>().Bind(placer,catalog); w.GetComponent<BuildingCatalogPresentation>().Bind(buildingResources,translationCache); manager.Open(w,parentHandle).
+   Для interaction: w.GetComponent<InteractionMenuWindow>().Bind(presenter).
+   Для settings: w.GetComponent<IntegratedSettingsWindow>().Bind(cache); Player автоматически из EasyInputWindowProvider; Audio definition уже связан builder.
+   Для отклика: w.GetComponent<WindowFeedbacks>().ContextProvider=playerFeedbackContext до Open; preset поля задаются в prefab.
+4. namespace EasyUI.Integrations, assembly EasyUI.IntegrationWindows:
+   IntegratedSettingsWindow.Bind(LocalizedCatalogCache), NextLanguage(), OpenAudio(); использует controls ExtrasRoot, сам является IInputSettingsTextProvider. FeedbackSettingsWindow.SetValue(index,float), Restore(), CapturedSettings; изменения через FeedbackSettings.Apply. Индексы Master/Music/SFX/HapticsIntensity=0/1/2/3.
+   BuildingCatalogPresentation.Bind(BuildingResources,LocalizedCatalogCache), RefreshSources(). actor account берётся через session.Actor. Подписка ресурсов+cache; стоимость подписана Base cost (available/required): это авторский прайс, не quote для длины/объёма/модификаторов. Окончательную цену/доступность размещения определяет EasyBuilding.
+   LocalizedResourceLabelProvider + ResourceBalanceLabel.Presentation: одно владение Text, события баланса/перевода. Ключи resource.<stableId>, building.<stableId>, ui.settings.<key>.
+
+Интеграционные регрессии, visual QA, lifecycle миграция Localization и README в работе. Для общего стенда эти реальные API уже доступны. Версии/master/manifest не менялись.
+Обновление проверки: в новом локальном fixture была CS0542 (имя класса Locales совпало с property), исправлено в исходнике и импортированной копии. Последний recompile_status сообщил failed=false, но compilationFailed=true — возможен старый флаг до reload; повторную проверку выполню после освобождения lock. Runtime-контракт/окна ранее компилировались. Соседние файлы не меняю.
+Автономная регрессия текущего ядра в отдельном чистом проекте завершена: 23/23 PlayMode Passed (IntegrationWave1/clean-playmode.xml). Включая новые проверки UpdateItem, сохранения ID, доставки Confirmed при FadeOut=0. Общие интеграционные тесты/visual QA ждут lock; готовые исходники в Library/EasyUIWork/IntegrationWave1.
+
+20:18 MSK — СОВМЕСТНЫЕ РЕГРЕССИИ EASYUI ПРОШЛИ: 48/48 PlayMode, 0 failed/skipped, duration 9.23 s. Report: Packages/com.oreethehat.easy-ui/Documentation~/Reports/IntegrationWave1/playmode.json. Финальная компиляция healthy (failed=false, compilationFailed=false). Это включает реальный EasyInput/Interaction/Movement/Building/Combat/Feedbacks, локализованные resource+catalog строки, Settings language+audio, held input, nested leases, approach, death/restore, shared session replacement, glyph/availability updates и no duplicate confirm. Все мои импортированные copies синхронизированы. Standalone core отдельно 23/23.
+Lock освобождён после полного выхода из PlayMode. Сообщение EditorPriority получено во время уже шедшего моего здорового прогона (Input repair ранее был healthy в 17:15 UTC). Новые lock не беру до приоритетных Combat final и coordinator EasySuite import/generation. Visual QA нового builder/settings/catalog/radial подготовлен, остаётся выполнить после этих шагов; API уже можно использовать. Source: Samples~/Integration Windows/Editor/IntegrationWindowBuilder.cs. Docs: Samples~/Integration Windows/README.md.
+Уточнение проверки: 48/48 подтверждены по именам; самый последний дополнительный тест BindingGlyphAndAvailabilityUpdateWithoutReplacingRadialItems не вошёл в обнаруженный список первого прогона (DLL обновилась после discovery). Он уже в идентичных stage/Assets исходниках; после приоритетных шагов отдельно дождусь фактического reload/наличия метода и повторю suite до ожидаемых 49 тестов. Поэтому glyph regression пока не объявляю проверенной. Новых импортов для этого не нужно.
+Во время ожидания очереди добавил вне импорта ещё одну точную joint-регрессию: реальный EasyBuildingInput FirstPerson context + вложенный catalog + held UI Submit. Прежние тесты покрывали shared session и Window leases, но этот тест дополнительно проверяет сохранение FPS building context после закрытия всего UI. Итоговый ожидаемый own suite теперь 50. Runtime API не менялся. Один короткий импорт новых тестов потребуется только после root generation/выданного слота.
+Nested audio feedback repair подготовлен вне импорта: IntegratedSettingsWindow.OpenAudio теперь InstantiateWindow(AudioWindow,transform) один раз при первом открытии, задаёт TextProvider и WindowFeedbacks до Open. Пустой child.ContextProvider и Open наследуются от parent; явные child provider/Select/Confirm/Open сохраняются. Child повторно используется пока parent открыт, закрывается/Destroy в OnDisable и OnDestroy владельца (также при Manager.CloseAll). Добавлена focused regression на provider до Opened, наследование/явные presets, reuse, input count и cleanup. Итоговый own suite ожидает 51 тест. Никаких новых editor lease до разрешённой очереди.
+Reentry repair подготовлен вне импорта: Building Select захватывает исходные WindowHandle/Placer, ставит frame guard ДО SelectionChanged и после каждого callback проверяет тот же открытый активный handle/placer; BindSession сам запрещает подписку неактивного view. Interaction Select аналогично защищён от CloseAll/reopen в Presenter.Changed. В ActivateSelected найден и исправлен дополнительный owned-hold случай: OnStarted закрывал окно до присвоения pressed; теперь владение публикуется до Activate и освобождается из OnDisable через исходный presenter. Добавлены 2 focused regression: close/reopen обоих меню + hold release при OnStarted->CloseAll. Итоговый own suite ожидает 53 теста. Всё пока в Library staging до разрешённого слота.
+Новые reentry/audio изменения и весь набор тестов проверены отдельной Roslyn-компиляцией вне Editor: EasyUI.EasyBuilding, EasyUI.EasyInteraction, EasyUI.IntegrationWindows, EasyUI.IntegrationWave1.Tests — все compile passed. Это проверка типов, не замена PlayMode; импорт и 53 теста ждут очередь после root scene generation.

@@ -1,0 +1,25 @@
+{
+  "name": "EasyUI.EasyLocalization",
+  "references": [
+    "EasyUI.Runtime",
+    "EasyLocalization.Runtime",
+    "Unity.Localization",
+    "Unity.ugui"
+  ],
+  "versionDefines": [
+    {
+      "name": "com.oreethehat.easy-localization",
+      "expression": "0.2.0",
+      "define": "EASY_WAVE1_LOCALIZATION"
+    },
+    {
+      "name": "com.oreethehat.easy-ui",
+      "expression": "0.2.0",
+      "define": "EASY_WAVE1_UI"
+    }
+  ],
+  "defineConstraints": [
+    "EASY_WAVE1_LOCALIZATION",
+    "EASY_WAVE1_UI"
+  ]
+}

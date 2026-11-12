@@ -1,0 +1,199 @@
+{
+  "files": [
+    {
+      "path": "Editor/EasyUI.Editor.asmdef",
+      "sha256": "083f2c682f8256e25114cb9b4b63efc46f73f521d8e07cd99170ce42e181fad9"
+    },
+    {
+      "path": "Editor/WindowInspectors.cs",
+      "sha256": "41e31ff950e004cd923532b638e4d2acafb97ea6405567248ec89921bcd6a915"
+    },
+    {
+      "path": "Runtime/ConfirmationDialog.cs",
+      "sha256": "ca1ebef56b9d74f982cbc2d6f86aabafa74e94e579a37d7d7bee2f7dceb3f906"
+    },
+    {
+      "path": "Runtime/EasyUI.Runtime.asmdef",
+      "sha256": "a84c684b3a1d31d5af490b2ae0feff0bfb7347f01e74d643202facd3b88b2dfd"
+    },
+    {
+      "path": "Runtime/EasyUIInputModule.cs",
+      "sha256": "38d13e699021290fdf581f1351de2801b1f7fcf0f18f1016ae50ccef5fb72b3b"
+    },
+    {
+      "path": "Runtime/InputReleaseGate.cs",
+      "sha256": "047670c86726e9c08e95445bf387f0ec697e9c2c7775cb9122639f6f0bf6f28c"
+    },
+    {
+      "path": "Runtime/OpenWindowButton.cs",
+      "sha256": "01c7cefee999e4444ea9d262b5cd4d607d1c782204ca1a67851dd79069953c18"
+    },
+    {
+      "path": "Runtime/RadialMenu.cs",
+      "sha256": "0269c8be89e127963c554ae4540c44741bf2c71b5f0e5657c7b7df7f4347aa2d"
+    },
+    {
+      "path": "Runtime/RadialMenuTrigger.cs",
+      "sha256": "9fa287ad07f3b7b0e81d29d285f082b4893c79c8a6c1dfc13260e388d34346cf"
+    },
+    {
+      "path": "Runtime/StandaloneInputProvider.cs",
+      "sha256": "d548bc931fdb704e89cf6e395c0bb582b8a7396c47a40c9ec459398b921d71b7"
+    },
+    {
+      "path": "Runtime/UIWindow.cs",
+      "sha256": "d8f6119b902ba32a3c7d942c58ce2e91fd966715c3bbd9a6034d21cdb3eccd84"
+    },
+    {
+      "path": "Runtime/WindowDefinition.cs",
+      "sha256": "166271e3ec26fcec2038f29bf8b24160a157bbda57857ab2ce58b58051547d6e"
+    },
+    {
+      "path": "Runtime/WindowHandle.cs",
+      "sha256": "0665fe30624d39c4ee01dc14093a9944bf08f8a7e472b24bc3f29cfc72ce2940"
+    },
+    {
+      "path": "Runtime/WindowManager.cs",
+      "sha256": "feb9f6b4df078b38bdf2d935cb8e4955aeb78d137b44af1afeac302ce829f425"
+    },
+    {
+      "path": "Runtime/WindowPolicy.cs",
+      "sha256": "87b778a27142d2cb2ec54d1cd7ea59cc58470ec5c724a3a3c9e5d61c14a8b215"
+    },
+    {
+      "path": "Samples~/EasyBuilding/BuildingGameplayGate.cs",
+      "sha256": "16ca416cc6b2c14fe2db0456412be69eec468a408ba89d09c06b410d4a1a0b71"
+    },
+    {
+      "path": "Samples~/EasyBuilding/EasyUI.EasyBuilding.asmdef",
+      "sha256": "6117bcd75e8ce13ab3c96f42317f0fd557236406109c28c6dfcce052ecbe2b64"
+    },
+    {
+      "path": "Samples~/EasyFeedbacks/EasyUI.EasyFeedbacks.asmdef",
+      "sha256": "dcf538a7bbacd8a91e457969a7b45d301f18d5ebb662f652c6860db74bb94da4"
+    },
+    {
+      "path": "Samples~/EasyFeedbacks/WindowFeedbacks.cs",
+      "sha256": "a8ec3f9f7a4d4f110c6cd8d2b76942f0e3a5c27f89e990db85056a8645c6a7df"
+    },
+    {
+      "path": "Samples~/EasyInput/EasyInputWindowProvider.cs",
+      "sha256": "0d9686c6af345cff2aeef7cab6e72e51a5e90fa4a30e5f6870cde21934affd7d"
+    },
+    {
+      "path": "Samples~/EasyInput/EasyUI.EasyInput.asmdef",
+      "sha256": "1c40e40f9ef4227232168d935edd69c4dbaf0f05ae9a97ebe6d85b25f2579f1d"
+    },
+    {
+      "path": "Samples~/EasyInput/InputSettingsWindow.cs",
+      "sha256": "341c7c3e7136346b39a037b67567ab0ad4aea4cd1691f05dbd80c08a4d3a209e"
+    },
+    {
+      "path": "Samples~/EasyInput/Tests/EasyInputWindowTests.cs",
+      "sha256": "1966143e09ff6a49ee533a6a832fc14df59d890bf497548527abf042c3e30fb5"
+    },
+    {
+      "path": "Samples~/EasyInput/Tests/EasyUI.EasyInput.Tests.asmdef",
+      "sha256": "5f077dc6a5b368a13df56bec385b1010607af84913857b09d2d1357dd3c22eac"
+    },
+    {
+      "path": "Samples~/EasyInteraction/EasyUI.EasyInteraction.asmdef",
+      "sha256": "bdb3c679018b86d6402d51483709dd34fe3366a33e0085bd63521be9032ed219"
+    },
+    {
+      "path": "Samples~/EasyInteraction/OpenWindowAction.cs",
+      "sha256": "09d7f87f18cc0395c79e5280976a6209522fc1742db934e0005470e1aecca538"
+    },
+    {
+      "path": "Samples~/EasyLocalization/EasyUI.EasyLocalization.asmdef",
+      "sha256": "3519fecf95494459b606d092eb89bec16045993dbe4863a75d06b68c753a2110"
+    },
+    {
+      "path": "Samples~/EasyLocalization/LocalizedWindowText.cs",
+      "sha256": "360badba2c3ee1d4e42904c490d6773508e54fc906e6e0cd87c7bc4e359df415"
+    },
+    {
+      "path": "Samples~/EasyLocalization/Tests/EasyUI.EasyLocalization.Tests.asmdef",
+      "sha256": "0f6e53866ae61d04be26a670c50033ab7402787e7e5ac698fb928bbf42b21ba6"
+    },
+    {
+      "path": "Samples~/EasyLocalization/Tests/LocalizedWindowTests.cs",
+      "sha256": "7727d514223ddd1ca05741a2f3088befcfda53ec17828f6104cb9be79c7433ef"
+    },
+    {
+      "path": "Samples~/EasyResources/EasyUI.EasyResources.asmdef",
+      "sha256": "a4ce7f2995b51efda4911c790d296209783f8149a745d808e9820cee030ef1b3"
+    },
+    {
+      "path": "Samples~/EasyResources/ResourceBalanceLabel.cs",
+      "sha256": "adb2a978a19591dad09eb3f1bdf33f150e675bf2c92b6ed2f10a364e9637457f"
+    },
+    {
+      "path": "Samples~/Getting Started/DemoGameplayGate.cs",
+      "sha256": "76664bfb25a21c5798af8e8366fac65b4b115fecf6fca3ba71dd54586d510513"
+    },
+    {
+      "path": "Samples~/Getting Started/DemoWindowView.cs",
+      "sha256": "c648634aa631d8459ac238687b6f1c98cfbcd97740024ae6f689bf82e390bcd2"
+    },
+    {
+      "path": "Samples~/Getting Started/EasyUI.Sample.asmdef",
+      "sha256": "00007a5c2ca564842b446c21ceaef487a7e1bd3ed3410f407d03e9933a9249a0"
+    },
+    {
+      "path": "Samples~/Getting Started/EasyUIDemo.cs",
+      "sha256": "09a5108c1f2f4fb74979d13c3a91fdcfa48b66eaf5e7a276f26c156b1e98569c"
+    },
+    {
+      "path": "Samples~/Getting Started/Editor/EasyUI.Sample.Editor.asmdef",
+      "sha256": "cca51c12d23285c8fbb3f7d4212d62b17ed139a86aeb3886a440765822c8d8f6"
+    },
+    {
+      "path": "Samples~/Getting Started/Editor/EasyUISampleBuilder.cs",
+      "sha256": "ef66e42695a18ef2a8f2212f263da1a376e5e30f9114d75fdb46d4879428d6cd"
+    },
+    {
+      "path": "Samples~/Getting Started/UIFactory.cs",
+      "sha256": "2cc9c9f986f2938fc694dc0b74871b95ed6e2fec903e4e1249a62e33476505c5"
+    },
+    {
+      "path": "Tests/PlayMode/EasyUI.Tests.PlayMode.asmdef",
+      "sha256": "25df4d4f43dcb702b064db69051e05aafc6799f5dd58e204fe07709df43e7873"
+    },
+    {
+      "path": "Tests/PlayMode/StandaloneProviderTests.cs",
+      "sha256": "6c0693c4ec62a1bc1ee002fe14d7e49a42ce36057b8acfa31b4beb50c68bdf2c"
+    },
+    {
+      "path": "Tests/PlayMode/WindowTests.cs",
+      "sha256": "64af1656cb5fd74d92ffd6265d3185ddee9f55a43c4ba22f1737cbd3f98ef077"
+    },
+    {
+      "path": "Tools~/Verification/EasyUI.Verification.asmdef",
+      "sha256": "9061f4eb3f68bf7796b2737094cc9ac59d81c9c5d476db66cde056a2835287ed"
+    },
+    {
+      "path": "Tools~/Verification/Editor/EasyUI.Verification.Editor.asmdef",
+      "sha256": "bcd2cb792e9657035da5c9fdd1be5f48ae560d9cefc6049b70a67c54aa83a1f3"
+    },
+    {
+      "path": "Tools~/Verification/Editor/VerificationBuilder.cs",
+      "sha256": "7f9df64d63263033812d0ae51b2e6c310c095519677134d1bd47a4cdb530a650"
+    },
+    {
+      "path": "Tools~/Verification/FirstRunSmoke.cs",
+      "sha256": "ff94887a1f5cc825de593dcfb7609b38c1006465876697b87e840380172dc9af"
+    },
+    {
+      "path": "Tools~/Verification/UIBenchmark.cs",
+      "sha256": "733a0648c590be7292fc12d181e91b719a1e21948e02cc7ccd9e88f340b45d97"
+    },
+    {
+      "path": "Tools~/Verification/UICapture.cs",
+      "sha256": "e332d3a69b9efff11a3a63dd82a05ecfbc716c7f712db1cb1408845d41792873"
+    }
+  ],
+  "version": "0.1.0",
+  "package": "com.oreethehat.easy-ui",
+  "unity": "6000.3.22f1"
+}

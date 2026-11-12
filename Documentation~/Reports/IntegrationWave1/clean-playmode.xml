@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="23" result="Passed" total="23" passed="23" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0,2891073">
+  <test-suite type="TestSuite" id="1031" name="Games Factory" fullname="Games Factory" runstate="Runnable" testcasecount="23" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.289107" total="23" passed="23" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1026" name="EasyUI.Tests.PlayMode.dll" fullname="C:/Users/LeshaPC/Games Factory/EasyUIVerification~/CleanProject/Library/ScriptAssemblies/EasyUI.Tests.PlayMode.dll" runstate="Runnable" testcasecount="23" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.284414" total="23" passed="23" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="58092" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1027" name="EasyUI" fullname="EasyUI" runstate="Runnable" testcasecount="23" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.284180" total="23" passed="23" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1028" name="Tests" fullname="EasyUI.Tests" runstate="Runnable" testcasecount="23" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.284049" total="23" passed="23" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="StandaloneProviderTests" fullname="EasyUI.Tests.StandaloneProviderTests" classname="EasyUI.Tests.StandaloneProviderTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.069015" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1004" name="DisablingProviderReleasesAllLeasesAndRestoresActionState" fullname="EasyUI.Tests.StandaloneProviderTests.DisablingProviderReleasesAllLeasesAndRestoresActionState" methodname="DisablingProviderReleasesAllLeasesAndRestoresActionState" classname="EasyUI.Tests.StandaloneProviderTests" runstate="Runnable" seed="514458362" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.051769" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1003" name="MissingGameplayConfigurationIsActionable" fullname="EasyUI.Tests.StandaloneProviderTests.MissingGameplayConfigurationIsActionable" methodname="MissingGameplayConfigurationIsActionable" classname="EasyUI.Tests.StandaloneProviderTests" runstate="Runnable" seed="805106346" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.000760" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1002" name="OwnRequestsReleaseOutOfOrderAndRestoreOnlyPreviouslyEnabledActionsAfterNeutral" fullname="EasyUI.Tests.StandaloneProviderTests.OwnRequestsReleaseOutOfOrderAndRestoreOnlyPreviouslyEnabledActionsAfterNeutral" methodname="OwnRequestsReleaseOutOfOrderAndRestoreOnlyPreviouslyEnabledActionsAfterNeutral" classname="EasyUI.Tests.StandaloneProviderTests" runstate="Runnable" seed="535825361" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.010601" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1005" name="WindowTests" fullname="EasyUI.Tests.WindowTests" classname="EasyUI.Tests.WindowTests" runstate="Runnable" testcasecount="20" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.214313" total="20" passed="20" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1014" name="CancelCloseAnimationCanReopenWithoutAcquiringTwice" fullname="EasyUI.Tests.WindowTests.CancelCloseAnimationCanReopenWithoutAcquiringTwice" methodname="CancelCloseAnimationCanReopenWithoutAcquiringTwice" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="639762786" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.082794" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1009" name="ClosingParentClosesDescendantsAndAllowsReentrantUnrelatedOpen" fullname="EasyUI.Tests.WindowTests.ClosingParentClosesDescendantsAndAllowsReentrantUnrelatedOpen" methodname="ClosingParentClosesDescendantsAndAllowsReentrantUnrelatedOpen" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="12877532" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.004196" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1016" name="DialogCompletesCancelledWhenItsParentIsDestroyed" fullname="EasyUI.Tests.WindowTests.DialogCompletesCancelledWhenItsParentIsDestroyed" methodname="DialogCompletesCancelledWhenItsParentIsDestroyed" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="1669124567" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.005051" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1011" name="DisableDestroyAndManagerShutdownReleaseEverything" fullname="EasyUI.Tests.WindowTests.DisableDestroyAndManagerShutdownReleaseEverything" methodname="DisableDestroyAndManagerShutdownReleaseEverything" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="2115166027" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.002528" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1024" name="DisablingOnlyTheWindowComponentHidesAndUnblocksItsView" fullname="EasyUI.Tests.WindowTests.DisablingOnlyTheWindowComponentHidesAndUnblocksItsView" methodname="DisablingOnlyTheWindowComponentHidesAndUnblocksItsView" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="1661286143" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.004010" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1019" name="DisablingSelectedRadialItemClearsSelectionWithoutRebuilding" fullname="EasyUI.Tests.WindowTests.DisablingSelectedRadialItemClearsSelectionWithoutRebuilding" methodname="DisablingSelectedRadialItemClearsSelectionWithoutRebuilding" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="827680607" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.007789" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1023" name="FirstModalBlocksLauncherButtonsOnTheManagersRootCanvas" fullname="EasyUI.Tests.WindowTests.FirstModalBlocksLauncherButtonsOnTheManagersRootCanvas" methodname="FirstModalBlocksLauncherButtonsOnTheManagersRootCanvas" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="822659767" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.009620" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1015" name="GamepadNavigationCannotSubmitOutsideWindow" fullname="EasyUI.Tests.WindowTests.GamepadNavigationCannotSubmitOutsideWindow" methodname="GamepadNavigationCannotSubmitOutsideWindow" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="97401164" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.012272" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1012" name="MissingProviderRejectsBeforeCreatingAWindow" fullname="EasyUI.Tests.WindowTests.MissingProviderRejectsBeforeCreatingAWindow" methodname="MissingProviderRejectsBeforeCreatingAWindow" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="1728886284" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.002672" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1007" name="MissingSelectionFallsBackAndModalRemovesLowerRaycasts" fullname="EasyUI.Tests.WindowTests.MissingSelectionFallsBackAndModalRemovesLowerRaycasts" methodname="MissingSelectionFallsBackAndModalRemovesLowerRaycasts" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="879493257" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.003760" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1021" name="ModalShieldWinsActualRaycastOutsideWindow" fullname="EasyUI.Tests.WindowTests.ModalShieldWinsActualRaycastOutsideWindow" methodname="ModalShieldWinsActualRaycastOutsideWindow" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="417429486" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.003786" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1006" name="NestedBackRestoresParentSelectionAndItsLease" fullname="EasyUI.Tests.WindowTests.NestedBackRestoresParentSelectionAndItsLease" methodname="NestedBackRestoresParentSelectionAndItsLease" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="53846057" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.005147" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1013" name="OpeningHeldSubmitDoesNotActivateChildAndCancelClosesOnce" fullname="EasyUI.Tests.WindowTests.OpeningHeldSubmitDoesNotActivateChildAndCancelClosesOnce" methodname="OpeningHeldSubmitDoesNotActivateChildAndCancelClosesOnce" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="1347947867" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.005111" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1020" name="OpeningPointerPressCannotReplayOnChildAfterRelease" fullname="EasyUI.Tests.WindowTests.OpeningPointerPressCannotReplayOnChildAfterRelease" methodname="OpeningPointerPressCannotReplayOnChildAfterRelease" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="328885926" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.013805" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1017" name="RadialCenterDisabledSectorAndConfirmationAreDeterministic" fullname="EasyUI.Tests.WindowTests.RadialCenterDisabledSectorAndConfirmationAreDeterministic" methodname="RadialCenterDisabledSectorAndConfirmationAreDeterministic" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="183784781" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.029638" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1018" name="RadialRefreshRetainsViewSelectionAndDeliversBeforeImmediateDisable" fullname="EasyUI.Tests.WindowTests.RadialRefreshRetainsViewSelectionAndDeliversBeforeImmediateDisable" methodname="RadialRefreshRetainsViewSelectionAndDeliversBeforeImmediateDisable" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="1135467482" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.004441" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1010" name="ReopeningParentFromChildClosedListenerCancelsItsPendingClose" fullname="EasyUI.Tests.WindowTests.ReopeningParentFromChildClosedListenerCancelsItsPendingClose" methodname="ReopeningParentFromChildClosedListenerCancelsItsPendingClose" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="354481620" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.002675" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1008" name="RepeatedOpenAndOutOfOrderCloseDoNotDuplicateRequests" fullname="EasyUI.Tests.WindowTests.RepeatedOpenAndOutOfOrderCloseDoNotDuplicateRequests" methodname="RepeatedOpenAndOutOfOrderCloseDoNotDuplicateRequests" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="1670078819" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.002791" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1022" name="TopModalReceivesRealPointerClickAboveItsShield" fullname="EasyUI.Tests.WindowTests.TopModalReceivesRealPointerClickAboveItsShield" methodname="TopModalReceivesRealPointerClickAboveItsShield" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="253601043" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.005351" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1025" name="UnloadingManagersSceneReleasesAllOwnedRequests" fullname="EasyUI.Tests.WindowTests.UnloadingManagersSceneReleasesAllOwnedRequests" methodname="UnloadingManagersSceneReleasesAllOwnedRequests" classname="EasyUI.Tests.WindowTests" runstate="Runnable" seed="1835200104" result="Passed" start-time="2026-11-12 17:08:57Z" end-time="2026-11-12 17:08:57Z" duration="0.005096" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:\Users\LeshaPC\Games Factory\Packages\com.oreethehat.easy-ui\Documentation~\Reports\IntegrationWave1\clean-playmode.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

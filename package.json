@@ -1,0 +1,56 @@
+{
+  "name": "com.oreethehat.easy-ui",
+  "displayName": "EasyUI",
+  "version": "0.2.0",
+  "unity": "6000.3",
+  "description": "Window management, modal navigation and radial menus for Unity with Input System integration.",
+  "author": {
+    "name": "orEEtheHAT"
+  },
+  "dependencies": {
+    "com.unity.ugui": "2.0.0",
+    "com.unity.inputsystem": "1.20.0"
+  },
+  "samples": [
+    {
+      "displayName": "Getting Started",
+      "description": "HUD, inventory, nested settings, confirmation and radial menu. Requires EasyUI 0.2.0+. No prerequisite sample imports.",
+      "path": "Samples~/Getting Started"
+    },
+    {
+      "displayName": "EasyBuilding",
+      "description": "Independent building input gates for windows. Requires EasyBuilding 0.3.0+, EasyUI 0.2.0+. No prerequisite sample imports.",
+      "path": "Samples~/EasyBuilding"
+    },
+    {
+      "displayName": "EasyResources",
+      "description": "Event-driven resource balance labels. Requires EasyResources 0.3.0+, EasyUI 0.2.0+. No prerequisite sample imports.",
+      "path": "Samples~/EasyResources"
+    },
+    {
+      "displayName": "EasyInteraction",
+      "description": "Open a player window from an interaction action. Requires EasyInteraction 0.3.0+, EasyUI 0.2.0+. No prerequisite sample imports.",
+      "path": "Samples~/EasyInteraction"
+    },
+    {
+      "displayName": "EasyLocalization",
+      "description": "Localized window text using standard Unity Localization references. Requires EasyLocalization 0.2.0+, EasyUI 0.2.0+, Unity Localization 1.5.13+. No prerequisite sample imports.",
+      "path": "Samples~/EasyLocalization"
+    },
+    {
+      "displayName": "EasyFeedbacks",
+      "description": "Window feedback with an optional player context. Requires EasyFeedbacks 1.8.0+, EasyUI 0.2.0+. No prerequisite sample imports.",
+      "path": "Samples~/EasyFeedbacks"
+    },
+    {
+      "displayName": "EasyInput",
+      "path": "Samples~/EasyInput",
+      "description": "Player-owned UI contexts and a complete uGUI controls/rebinding window. Requires EasyInput 0.2.0+, EasyUI 0.2.0+. No prerequisite sample imports."
+    },
+    {
+      "displayName": "Integration Windows",
+      "path": "Samples~/Integration Windows",
+      "description": "Reusable interaction/building list and radial windows, plus controls, language and audio settings. Requires EasyBuilding 0.3.0+, EasyFeedbacks 1.8.0+, EasyInput 0.2.0+, EasyInteraction 0.3.0+, EasyLocalization 0.2.0+, EasyResources 0.3.0+, EasyUI 0.2.0+. Import first: EasyBuilding / EasyResources; EasyUI / EasyBuilding; EasyUI / EasyFeedbacks; EasyUI / EasyInput; EasyUI / EasyInteraction; EasyUI / EasyResources."
+    }
+  ]
+}

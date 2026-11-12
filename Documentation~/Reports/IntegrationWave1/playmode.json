@@ -1,0 +1,399 @@
+{
+  "success": true,
+  "command": "command test",
+  "data": {
+    "command": "test",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 10.82,
+      "summary": {
+        "total": 53,
+        "passed": 53,
+        "failed": 0,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "EasyUI.ControllerTests.ControllerRebindTests.ExistingAndReplacementInteractionControllerUseBindingChangedInsideEasyUI",
+          "Status": "Passed",
+          "Duration": 0.7620642,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Cooperation.Tests.WorkshopTests.InteractionRadialResourcesAndOwnedBuildingBlocksWorkTogether",
+          "Status": "Passed",
+          "Duration": 1.4462237,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Integrations.Input.Tests.EasyInputWindowTests.BindingRowsAreVisibleInsideViewportAndSliderHandlesFitTracks",
+          "Status": "Passed",
+          "Duration": 0.0745125,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Integrations.Input.Tests.EasyInputWindowTests.CancelFirstEndsRebindThenNextPressClosesWindow",
+          "Status": "Passed",
+          "Duration": 0.0879418,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Integrations.Input.Tests.EasyInputWindowTests.ContextSubscriberCanCloseWindowWhileItsLeaseIsBeingAcquired",
+          "Status": "Passed",
+          "Duration": 0.0337632,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Integrations.Input.Tests.EasyInputWindowTests.ContextSubscriberCanOpenAnotherWindowDuringAcquisition",
+          "Status": "Passed",
+          "Duration": 0.0388178,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Integrations.Input.Tests.EasyInputWindowTests.CustomPlayerMapAndHiddenInheritCursorAreRespected",
+          "Status": "Passed",
+          "Duration": 0.1124981,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Integrations.Input.Tests.EasyInputWindowTests.ExceptionAndReentrantListenerDoNotLeakContexts",
+          "Status": "Passed",
+          "Duration": 0.1059293,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Integrations.Input.Tests.EasyInputWindowTests.GamepadCancelIsNotAssignedAsNewBinding",
+          "Status": "Passed",
+          "Duration": 0.3450537,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Integrations.Input.Tests.EasyInputWindowTests.ModuleEnableDisableCannotOverrideContextsAndCancelWorksWhileModuleDisabled",
+          "Status": "Passed",
+          "Duration": 0.4559479,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Integrations.Input.Tests.EasyInputWindowTests.PartialRestrictionsAndOutOfOrderClosureKeepMoveEnabled",
+          "Status": "Passed",
+          "Duration": 0.115532,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Integrations.Input.Tests.EasyInputWindowTests.RealContextsStayOwnedAcrossNestedWindowsAndExternalRequest",
+          "Status": "Passed",
+          "Duration": 0.1552004,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Integrations.Input.Tests.EasyInputWindowTests.RebindCancelCannotLeakIntoGameplayResumedByAUiOnlyWindow",
+          "Status": "Passed",
+          "Duration": 0.1495908,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Integrations.Input.Tests.EasyInputWindowTests.SettingsExtensionUsesOneViewAndUnsubscribesAfterDisable",
+          "Status": "Passed",
+          "Duration": 0.2019677,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Integrations.Input.Tests.EasyInputWindowTests.SettingsWindowUsesRuntimeCaptureRestoreAndPresentation",
+          "Status": "Passed",
+          "Duration": 0.1389866,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Integrations.Localization.Tests.LocalizedWindowTests.LocalizedStringAndPublicLanguageApiRefreshWindowTextAndRespectDisable",
+          "Status": "Passed",
+          "Duration": 0.5609117,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.IntegrationWave1.Tests.IntegrationWindowTests.ApproachHeldInputNestedWindowsAndDeathRestoreKeepOwnersIndependent",
+          "Status": "Passed",
+          "Duration": 0.3353985,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.IntegrationWave1.Tests.IntegrationWindowTests.AudioChildInheritsFeedbackBeforeOpenedReusesAndCleansUp",
+          "Status": "Passed",
+          "Duration": 0.2476138,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.IntegrationWave1.Tests.IntegrationWindowTests.AudioChildUsesRuntimeStateAndRebindCancelLeavesParentContext",
+          "Status": "Passed",
+          "Duration": 0.2752252,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.IntegrationWave1.Tests.IntegrationWindowTests.BindingGlyphAndAvailabilityUpdateWithoutReplacingRadialItems",
+          "Status": "Passed",
+          "Duration": 0.5292668,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.IntegrationWave1.Tests.IntegrationWindowTests.BuildingSelectionUsesReplacedCanonicalSessionAndPreservesOtherWindowLease",
+          "Status": "Passed",
+          "Duration": 0.2544619,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.IntegrationWave1.Tests.IntegrationWindowTests.CatalogScrollFollowsSelectionAndKeepsUiModuleSingle",
+          "Status": "Passed",
+          "Duration": 0.1760406,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.IntegrationWave1.Tests.IntegrationWindowTests.ClosingFromActionStartedReleasesTheUiOwnedHold",
+          "Status": "Passed",
+          "Duration": 0.1498088,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.IntegrationWave1.Tests.IntegrationWindowTests.FeedbackContextUsesPlayersGamepadAndDisabledProviderFallsBack",
+          "Status": "Passed",
+          "Duration": 0.072697,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.IntegrationWave1.Tests.IntegrationWindowTests.FpsBuildingContextSurvivesNestedCatalogAndHeldUiSubmit",
+          "Status": "Passed",
+          "Duration": 0.2364404,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.IntegrationWave1.Tests.IntegrationWindowTests.InteractionMenuShowsSharedBindingAndBackCancelsOperationBeforeClosing",
+          "Status": "Passed",
+          "Duration": 0.1565549,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.IntegrationWave1.Tests.IntegrationWindowTests.InteractionRadialSelectsOnceEvenWhenWindowClosesImmediately",
+          "Status": "Passed",
+          "Duration": 0.1410762,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.IntegrationWave1.Tests.IntegrationWindowTests.SelectionCallbacksCanCloseOrReopenMenusWithoutResubscribingOrClosingNewHandle",
+          "Status": "Passed",
+          "Duration": 0.6162833,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.IntegrationWave1.Tests.LocalizedIntegrationTests.CombinedControlsLanguageUsesExistingControlViewAndPublicLanguageApi",
+          "Status": "Passed",
+          "Duration": 0.1287117,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.IntegrationWave1.Tests.LocalizedIntegrationTests.ResourceAndCatalogDataUseOneTextWriterAcrossLanguageAndReservations",
+          "Status": "Passed",
+          "Duration": 0.1353621,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.StandaloneProviderTests.DisablingProviderReleasesAllLeasesAndRestoresActionState",
+          "Status": "Passed",
+          "Duration": 0.0627392,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.StandaloneProviderTests.MissingGameplayConfigurationIsActionable",
+          "Status": "Passed",
+          "Duration": 0.0576365,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.StandaloneProviderTests.OwnRequestsReleaseOutOfOrderAndRestoreOnlyPreviouslyEnabledActionsAfterNeutral",
+          "Status": "Passed",
+          "Duration": 0.1716024,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.CancelCloseAnimationCanReopenWithoutAcquiringTwice",
+          "Status": "Passed",
+          "Duration": 0.1214184,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.ClosingParentClosesDescendantsAndAllowsReentrantUnrelatedOpen",
+          "Status": "Passed",
+          "Duration": 0.0653314,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.DialogCompletesCancelledWhenItsParentIsDestroyed",
+          "Status": "Passed",
+          "Duration": 0.1139603,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.DisableDestroyAndManagerShutdownReleaseEverything",
+          "Status": "Passed",
+          "Duration": 0.0629353,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.DisablingOnlyTheWindowComponentHidesAndUnblocksItsView",
+          "Status": "Passed",
+          "Duration": 0.0731732,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.DisablingSelectedRadialItemClearsSelectionWithoutRebuilding",
+          "Status": "Passed",
+          "Duration": 0.0718099,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.FirstModalBlocksLauncherButtonsOnTheManagersRootCanvas",
+          "Status": "Passed",
+          "Duration": 0.4259628,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.GamepadNavigationCannotSubmitOutsideWindow",
+          "Status": "Passed",
+          "Duration": 0.1279542,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.MissingProviderRejectsBeforeCreatingAWindow",
+          "Status": "Passed",
+          "Duration": 0.0627264,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.MissingSelectionFallsBackAndModalRemovesLowerRaycasts",
+          "Status": "Passed",
+          "Duration": 0.0769089,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.ModalShieldWinsActualRaycastOutsideWindow",
+          "Status": "Passed",
+          "Duration": 0.0835476,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.NestedBackRestoresParentSelectionAndItsLease",
+          "Status": "Passed",
+          "Duration": 0.1113505,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.OpeningHeldSubmitDoesNotActivateChildAndCancelClosesOnce",
+          "Status": "Passed",
+          "Duration": 0.0941906,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.OpeningPointerPressCannotReplayOnChildAfterRelease",
+          "Status": "Passed",
+          "Duration": 0.0925088,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.RadialCenterDisabledSectorAndConfirmationAreDeterministic",
+          "Status": "Passed",
+          "Duration": 0.0707872,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.RadialRefreshRetainsViewSelectionAndDeliversBeforeImmediateDisable",
+          "Status": "Passed",
+          "Duration": 0.0588014,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.ReopeningParentFromChildClosedListenerCancelsItsPendingClose",
+          "Status": "Passed",
+          "Duration": 0.0383549,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.RepeatedOpenAndOutOfOrderCloseDoNotDuplicateRequests",
+          "Status": "Passed",
+          "Duration": 0.0396676,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.TopModalReceivesRealPointerClickAboveItsShield",
+          "Status": "Passed",
+          "Duration": 0.0783843,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EasyUI.Tests.WindowTests.UnloadingManagersSceneReleasesAllOwnedRequests",
+          "Status": "Passed",
+          "Duration": 0.0461026,
+          "Message": null,
+          "StackTrace": null
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\LeshaPC\\Games Factory"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
